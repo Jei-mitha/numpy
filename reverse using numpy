@@ -1,0 +1,8 @@
+
+#reverse the array
+import numpy as np
+a=np.array([1,3,5,7,9,11,13,15,17,19])
+t=np.array([],dtype=int)  
+for i in range(len(a)):
+    t=np.append(t,a[len(a)-1-i])
+print("the reversed array is :",t)

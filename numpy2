@@ -1,0 +1,30 @@
+import numpy as np
+x=(99,2,3,4,5,6,7,8,9)
+y=np.array(x)
+for i in range(len(y)):
+    if (y[i]%2==0):
+        continue
+    else:
+        print("not divisible by 2",y[i])
+#multiples of three
+x=[]
+for i in range(3,100,3):
+      x.append(i)
+print(x)
+y=np.array(x)
+print(y)
+if(y.size==0):
+      print("the array is empty")   
+else:
+      z=np.insert(y,16,10)
+      print(z)
+t=np.delete(z,10)
+print(t)
+
+r=np.array([])
+l=[1,2,3,4,5,6,7]
+s=np.array(l)
+for i in range(len(s)):
+      if(i<4):
+        r=np.append(s[i],r)
+print(r)
